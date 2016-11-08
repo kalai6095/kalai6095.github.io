@@ -563,25 +563,27 @@ $(document).ready(function($){
 	} else {
 		draggableOp = true;
 	}
-
+	
 	if ( $mapWrapper.length > 0 ) {
 		var map = new GMaps({
 			div: '#map',
-			lat : 23.79473005386213,
-			lng : 90.41430473327637,
-			scrollwheel: false,
+			/*lat : 23.79473005386213,
+			lng : 90.41430473327637,*/
+			lat:12.849794,
+			lng:77.671202,
+			scrollwheel: true,
 			draggable: draggableOp,
-			zoom: 16,
+			zoom: 18,
 			disableDefaultUI: true,
 			styles : mapStyle
 		});
 
 		map.addMarker({
-			lat : 23.79473005386213,
-			lng : 90.41430473327637,
+			lat:12.849794,
+			lng:77.671202,
 			icon: 'images/marker-icon.png',
 			infoWindow: {
-				content: '<p>BD InfoSys Ltd, Dhaka, Bangladesh</p>'
+				content: '<p>Electronic city, Bangalore</p>'
 			}
 		});
 	}
